@@ -17,7 +17,7 @@ var count = 5;
 var sequencia = [1,2,3,4];
 sequencia.push(randomButtons());
 
-/*btnAzul.addEventListener('click', function() {
+btnAzul.addEventListener('click', function() {
     clickButton(1);
 })
 btnVermelho.addEventListener('click', function() {
@@ -28,9 +28,9 @@ btnVerde.addEventListener('click', function() {
 })
 btnAmarelo.addEventListener('click', function() {
     clickButton(4);
-})*/
+})
 
-/*function clickButton(btn){
+function clickButton(btn){
     if(verificaTecla(btn, count)){
         count++;
         if(count==sequencia.length){
@@ -43,7 +43,7 @@ btnAmarelo.addEventListener('click', function() {
         sequencia[0];
         count= 0;
     }
-}*/
+}
 
 function sequenceButtons(){
     for(let i=0; i<sequencia.length; i++){
@@ -63,13 +63,13 @@ function sequenceButtons(){
     }
 }
 
-/*function randomButtons(){
+function randomButtons(){
     var num = 0;
     while(num==0){
         num = Math.floor(Math.random() * 5);
     }
     return num;
-}*/
+}
 
 function animationButton(btn){
     for(let i = 100 ; i>=50; i--){
