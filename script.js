@@ -7,15 +7,15 @@ const btnStart = document.getElementById("start");
 const telaMenu = document.querySelector(".menu");
 const telaGame = document.querySelector(".game");
 
-btnStart.addEventListener('click', function() {
-    telaMenu.style.display = "none"
-    telaGame.style.display = "flex";
-    animations();
-})
-
 var count = 0;
 var sequencia = [];
 sequencia.push(randomButtons());
+
+btnStart.addEventListener('click', function() {
+    telaMenu.style.display = "none"
+    telaGame.style.display = "flex";
+    sequenceButtons();
+})
 
 btnAzul.addEventListener('click', function() {
     clickButton(1);
@@ -35,7 +35,7 @@ function clickButton(btn){
         count++;
         if(count==sequencia.length){
             sequencia.push(randomButtons());
-            animations();
+            sequenceButtons();
             count=0;
         }
     }else{
