@@ -40,7 +40,7 @@ function clickButton(btn){
         }
     }else{
         alert("ERROI!!!");
-        sequencia[];
+        sequencia = [];
         count= 0;
         sequencia.push(randomButtons());
         sequenceButtons();
