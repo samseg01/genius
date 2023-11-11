@@ -10,11 +10,11 @@ const telaGame = document.querySelector(".game");
 btnStart.addEventListener('click', function() {
     telaMenu.style.display = "none"
     telaGame.style.display = "flex";
-    sequenceButtons();
+    animations();
 })
 
-var count = 5;
-var sequencia = [1,2,3,4];
+var count = 0;
+var sequencia = [];
 sequencia.push(randomButtons());
 
 btnAzul.addEventListener('click', function() {
@@ -42,6 +42,8 @@ function clickButton(btn){
         alert("ERROI!!!");
         sequencia[0];
         count= 0;
+        sequencia.push(randomButtons());
+        sequenceButtons();
     }
 }
 
