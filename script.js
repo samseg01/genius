@@ -7,15 +7,15 @@ const btnStart = document.getElementById("start");
 const telaMenu = document.querySelector(".menu");
 const telaGame = document.querySelector(".game");
 
-var count = 0;
-var sequencia = [];
-sequencia.push(randomButtons());
-
 btnStart.addEventListener('click', function() {
     telaMenu.style.display = "none"
     telaGame.style.display = "flex";
     sequenceButtons();
 })
+
+var count = 0;
+var sequencia = [];
+sequencia.push(randomButtons());
 
 btnAzul.addEventListener('click', function() {
     clickButton(1);
